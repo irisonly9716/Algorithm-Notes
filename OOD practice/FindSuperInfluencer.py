@@ -31,22 +31,22 @@ class solution:
 
     def find_Super_influencer(self, n:int) -> int:
 
-        candidate = 0
+        candidate = 1
 
         # 先找到这个candidate 这是题目的考点 ⭐线性遍历找到一个i 它没有关注它后面的所有其他i --elimination strategy--
-        for i in range(1, n): # 在 [0...i] 这些人里，candidate 是唯一“还可能成为答案的人”
+        for i in range(2, n + 1): # 在 [1...i] 这些人里，candidate 是唯一“还可能成为答案的人”
 
             # if candidate follows i, the original candidate is not valid, try i
             if self.followers(candidate, i):
                 candidate = i
 
         # now we find a candidate who does not follow any one, check if everyone follows him/her.
-        for i in range(n):
+        for i in range(1, n + 1):
 
             if i == candidate:
                 continue
 
-            # candidate不能关注任何人 
+            # candidate不能关注任何人
             if self.followers(candidate, i):
                 return -1
         
@@ -57,7 +57,7 @@ class solution:
         # check the candiate's follower number >= every other candidate + 1,000,000
         follower = self.get_followers_count(candidate)
 
-        for i in range(n):
+        for i in range(1, n + 1):
 
             if i == candidate:
                 continue

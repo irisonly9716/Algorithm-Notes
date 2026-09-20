@@ -22,7 +22,8 @@ class Solution:
     def find_path(self, edges:List[List[str]]) -> List:
 
 
-        graph = defaultdict(list) # 有分叉 
+        res = []
+        graph = defaultdict(list) # 有分叉
         in_degree = defaultdict(int)
 
         for node, nei in edges:
@@ -37,9 +38,8 @@ class Solution:
             if node not in in_degree: # all nodes should be in the in_degree dict
                 in_degree[node] = 0
 
-        res = []
         # start from the start node
-        for node in graph:
+        for node in list(graph): # list() 快照：BFS里graph[curr]会往defaultdict塞叶子节点，直接遍历会报RuntimeError
             # if node is start node, use a queue to find all ends of it.
             if in_degree[node] == 0:
                 queue = deque([node])

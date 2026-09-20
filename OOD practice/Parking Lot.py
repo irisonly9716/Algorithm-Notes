@@ -78,7 +78,7 @@ class Level:
     def free_count(self) -> Dict[SpotType, int]: 
 
         counts = {
-            SpotType.MOTORCYCLE: 0,
+            SpotType.MOTOR: 0,
             SpotType.COMPACT: 0,
             SpotType.LARGE: 0
         }
@@ -92,7 +92,7 @@ class Level:
 @dataclass
 class Ticket:
 
-    ticket_id: str
+    ticket_id: int
     plate: str
     vtype: VehicleType
     level_id: str
@@ -147,7 +147,7 @@ class ParkingLot:
         return ticket
         
     # 出场：用 ticket 找到 spot -> 释放 -> 计费
-    def leave(self, ticket_id: str, leave_ts: float) -> int: 
+    def leave(self, ticket_id: int, leave_ts: float) -> int:
 
         ticket = self.tickets[ticket_id]
 
