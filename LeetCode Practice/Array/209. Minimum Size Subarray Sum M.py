@@ -5,7 +5,7 @@ class Solution:
         
         # approach:sliding window
         # 1. use 2 pointers to iterate the array, both from the start 
-        # 2. when sum > target, compare the length of window to the min_win
+        # 2. when sum >= target, compare the length of window to the min_win
         # 3. return min_win
 
         # maintain the variable of minumum window, keeping it the min length. If window not found, return 0.

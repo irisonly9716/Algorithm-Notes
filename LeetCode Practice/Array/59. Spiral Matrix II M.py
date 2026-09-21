@@ -46,5 +46,5 @@ s = Solution()
 n = 3
 print(s.generateMatrix(n))
 
-# TC:O(n**n)
-# SC:O(n**n) if the output matters, otherwise O(1).
+# TC:O(n**2）
+# SC:O(n**2) if the output matters, otherwise O(1).
