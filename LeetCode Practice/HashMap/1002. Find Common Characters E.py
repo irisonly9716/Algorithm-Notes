@@ -3,7 +3,7 @@ from collections import Counter
 class Solution:
     def commonChars(self, words: list[str]) -> list[str]:
         
-        # appraoch:hashmap, {[letter:count], ...}; compare the freq of each letter word by word, min(freq1, freq2).
+        # approach:hashmap, {[letter:count], ...}; compare the freq of each letter word by word, min(freq1, freq2).
 
         # use the frequencies of letters in first word as a start.
         counter = Counter(words[0])
@@ -13,7 +13,7 @@ class Solution:
             freq = Counter(word)
 
             for letter, count in counter.items():
-                # everytime we need the minumum frequency of each letter accross all words
+                # every time we need the minimum frequency of each letter across all words
                 counter[letter] = min(freq[letter], counter[letter])
 
         # record the answer

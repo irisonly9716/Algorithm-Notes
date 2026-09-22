@@ -13,7 +13,7 @@ class Solution:
         nums.sort()
         res = []
 
-        # tripets, make sure we will have 3 elements to sum up.
+        # triplets, make sure we will have 3 elements to sum up.
         for i in range(n-2):
 
             # ⭐trim
