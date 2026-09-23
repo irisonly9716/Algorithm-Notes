@@ -7,7 +7,7 @@ class Solution:
         # approach: two pointers
         n = len(s)
         if n <= 1:
-            return s
+            return
 
         left = 0
         right = n - 1
