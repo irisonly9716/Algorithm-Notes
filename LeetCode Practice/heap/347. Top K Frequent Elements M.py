@@ -1,6 +1,7 @@
 from typing import List
 from collections import Counter
 import heapq
+import random # only used by approach 4 (quick select) in the comments below
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
@@ -70,7 +71,7 @@ class Solution:
         # space: O(n)
         # only when the scale of freq is not very huge
         # 选heap 因为k已知 额外空间很稳定；追求极致性价比才可以buckets 
-        # buckets 空间不稳定 （但也不会不会超过n）因为依赖于nums中最大freq which is unkown
+        # buckets 空间不稳定 （但也不会超过n）因为依赖于nums中最大freq which is unknown
         # bucket sort 理论上可以做到 O(n)，但需要 O(n) 额外空间，并且依赖“频率范围有限”这个条件；工程上 heap 往往更稳、更通用。
         # 如果是数据流 要用updatable ordered data structure + hash map；或者像redis那样用skip list + hashmap
         # 因为当数据增加的时候 要从heap里面取出这个元素加入再放进去是很耗费的 应该直接要一个可更新的 比如ordered map

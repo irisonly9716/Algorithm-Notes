@@ -14,12 +14,12 @@ class Solution:
             if char in chars_dict:
                 stack.append(char)
             else:
-                # if the current char is a close and no stack, flase
+                # if the current char is a close and no stack, false
                 # if the current char is a close but stack[-1] is not the open, false
                 if not stack or char != chars_dict[stack[-1]]:
                     return False
                 else:
                     stack.pop()
 
-        # check if the stack is empty, if not, we got more open then close
+        # check if the stack is empty, if not, we got more open than close
         return not stack  

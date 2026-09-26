@@ -17,7 +17,7 @@ class Solution:
 
         for index, char in enumerate(s):
             
-            # when char is small & in the stack，continue, ensuring no duplicate letters.
+            # when char is already in the stack, skip it, ensuring no duplicate letters.
             if char in seen:
                 continue
 
@@ -32,4 +32,4 @@ class Solution:
         return "".join(stack)
 
 # TC:O(n)
-# SC:O(n)
+# SC:O(26) the stack, last and seen hold at most 26 different lowercase letters.
