@@ -1,7 +1,7 @@
 import collections
 
 # use only 1 queue to implement the stack.
-# we need to add elements to the end of deque; when pop, check if 
+# we add elements to the tail of the deque; when pop or top, rotate the queue so the top element is at the head.
 class MyStack:
 
     def __init__(self):
@@ -16,7 +16,7 @@ class MyStack:
     def pop(self) -> int:     
 
         # we are not allowed to invoke q.pop(), we can only use queue.popleft()
-        # shffle len - 1 times, make the top element in the head; 
+        # shuffle len - 1 times, make the top element in the head; 
         # the rest queue will still in original order (tail is the top, head is the bottom)
         for _ in range(len(self.q) - 1):
             self.q.append(self.q.popleft())
@@ -26,7 +26,7 @@ class MyStack:
     def top(self) -> int:
 
         # keep the tail of queue be the top of stack;
-        # retrive the top element from the tail
+        # retrieve the top element from the tail
         for _ in range(len(self.q) - 1):
             self.q.append(self.q.popleft())
 

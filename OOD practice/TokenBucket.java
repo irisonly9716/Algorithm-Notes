@@ -36,32 +36,3 @@ public class TokenBucket {
 // 如果需要多个实例共享一个令牌桶 那就需要redis来存令牌状态 redis天然单线程/天然命令是原子的 没有中间态 而且操作很快
 // TC:O(1)
 // SC:O(1)
-
-
-/* 
-public class TokenBucketTest {
-    public static void main(String[] args) throws InterruptedException {
-        TokenBucket bucket = new TokenBucket(5, 2);
-
-        // 连续请求 7 次
-        for (int i = 1; i <= 7; i++) {
-            boolean allowed = bucket.tryAcquire();
-            System.out.println("Request " + i + ": " + allowed);
-        }
-
-        // 等 1 秒，让桶补 2 个 token
-        Thread.sleep(1000);
-
-        System.out.println("After 1 second:");
-
-        for (int i = 1; i <= 3; i++) {
-            boolean allowed = bucket.tryAcquire();
-            System.out.println("Request " + i + ": " + allowed);
-        }
-    }
-}
-*/
-
-
-
-
