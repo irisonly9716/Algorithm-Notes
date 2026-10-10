@@ -9,6 +9,10 @@ class Solution:
         
         # pre-order traversal and see if every pair of right&left is the same
 
+        # an empty tree is symmetric
+        if not root:
+            return True
+
         def preorder(left, right) -> bool:
 
             if not left and not right:

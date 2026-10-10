@@ -7,7 +7,7 @@ class TreeNode:
 class Solution:
     def minDepth(self, root: TreeNode | None) -> int:
         
-        # we cann't just use min(left + 1, right + 1) because it will give us a definate 0
+        # we can't just use min(left + 1, right + 1) because it will give us a definite 0
         if not root:
             return 0
 
