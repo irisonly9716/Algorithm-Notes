@@ -4,10 +4,11 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
+
 class Solution:
     def searchBST(self, root: TreeNode | None, val: int) -> TreeNode | None:
         
-        # approach1: recursion but easier
+        # approach1: recursion but easier based on the nature of a BST
 
         if not root:
             return None
