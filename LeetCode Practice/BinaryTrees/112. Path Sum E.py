@@ -7,7 +7,7 @@ class TreeNode:
 class Solution:
     def hasPathSum(self, root: TreeNode | None, targetSum: int) -> bool:
         
-        # approach: pre-order traversal
+        # approach: pre-order traversal without a path.
         # is any sum(root to leaf) == target?
 
         if not root:
@@ -23,7 +23,7 @@ class Solution:
 
             right = node.right and dfs(node.right, curr_sum + node.right.val)
 
-            # should add bool() otherwise when it's false it will only return null
+            # ⭐should add bool() otherwise when it's false it will only return null
             return bool(right or left)
 
 
