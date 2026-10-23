@@ -30,5 +30,5 @@ class Solution:
 
 
 
-# time: O(n!) 每个数字都有n次选择 递归深度是n 所以是n*n-1*n-2*...*1 = n!
+# time: O(n!) 每个数字都有n次选择 所以是n*n-1*n-2*...*1 = n! ⭐P(n,n) = n!
 # space: O(n) 递归深度最深是n个数字组成的排列
