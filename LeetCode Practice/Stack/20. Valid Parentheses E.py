@@ -22,4 +22,7 @@ class Solution:
                     stack.pop()
 
         # check if the stack is empty, if not, we got more open than close
-        return not stack  
+        return not stack
+
+# TC:O(n)
+# SC:O(n) the stack

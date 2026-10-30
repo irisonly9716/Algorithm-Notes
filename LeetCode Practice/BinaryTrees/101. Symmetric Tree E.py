@@ -31,3 +31,6 @@ class Solution:
 
 
         return preorder(root.left, root.right)
+
+# TC:O(n) every pair of nodes is compared once
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

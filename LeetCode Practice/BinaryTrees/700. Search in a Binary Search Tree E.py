@@ -17,11 +17,13 @@ class Solution:
             return root 
 
         return self.searchBST(root.left, val) if root.val > val else self.searchBST(root.right, val)
+        # TC:O(h) h is the height of the tree, we only go down one path
+        # SC:O(h) the recursion stack, O(1) if written iteratively
 
 
 
         '''
-        # approach2:recursion in-order traveral always appliesn to a BST.
+        # approach2:recursion in-order traversal always applies to a BST.
         if not root:
             return None
 

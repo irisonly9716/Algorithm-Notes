@@ -4,8 +4,8 @@ class Solution:
     def generateMatrix(self, n: int) -> List[List[int]]:
         
         # approach: simulations
-        # 1. construct the empty matrix, maintain the 4 boarders of the matrix
-        # 2. for loop maintains the 4 boarders and record the elements.
+        # 1. construct the empty matrix, maintain the 4 borders of the matrix
+        # 2. for loop maintains the 4 borders and record the elements.
 
         
         left = up = 0
@@ -15,7 +15,7 @@ class Solution:
 
         while left <= right or up <= bottom:
 
-            # record from left to right at the current top, the raw is not changing but column is changing.
+            # record from left to right at the current top, the row is not changing but column is changing.
             for j in range(left, right + 1):
                 matrix[up][j] = num
                 num += 1
@@ -46,5 +46,5 @@ s = Solution()
 n = 3
 print(s.generateMatrix(n))
 
-# TC:O(n**2）
+# TC:O(n**2)
 # SC:O(n**2) if the output matters, otherwise O(1).

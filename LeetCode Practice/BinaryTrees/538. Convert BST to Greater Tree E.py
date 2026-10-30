@@ -34,3 +34,5 @@ class Solution:
 
         return root
 
+# TC:O(n)
+# SC:O(h) the stack

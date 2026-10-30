@@ -7,13 +7,13 @@ class TreeNode:
 class Solution:
     def deleteNode(self, root: TreeNode | None, key: int) -> TreeNode | None:
         
-        # approach: one-way traversal in a BST, when we find the node, we should link it's 
-        # exsiting subtrees to the it's parent node. Need to consider all 3 situations.
+        # approach: one-way traversal in a BST, when we find the node, we should link its 
+        # existing subtrees to the its parent node. Need to consider all 3 situations.
 
         if not root:
             return None
 
-        # ⭐link the modified subtrees and return the ndoe
+        # ⭐link the modified subtrees and return the node
         if root.val > key:
             root.left = self.deleteNode(root.left, key)
             return root
@@ -21,7 +21,7 @@ class Solution:
             root.right = self.deleteNode(root.right, key)
             return root
 
-        # we found the node, link it's subrtrees and return or return the exsiting subtree
+        # we found the node, link its subtrees and return or return the existing subtree
         # 3 situations
         else: 
         
@@ -44,5 +44,6 @@ class Solution:
 
             # 3. one subtree, just skip the current node and return the one.
             return left if left else right
-    
-   
+
+# TC:O(h) h is the height of the tree: one path down to the key, and one more down the left side of its right subtree
+# SC:O(h) the recursion stack

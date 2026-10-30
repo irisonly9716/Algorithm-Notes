@@ -23,5 +23,5 @@ class Solution:
         backtracking(1)
         return res
 
-# TC:O(C(n,k))
+# TC:O(C(n,k) * k) every combination is copied in O(k)
 # SC:O(k)

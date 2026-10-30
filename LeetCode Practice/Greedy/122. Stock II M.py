@@ -4,7 +4,7 @@ class Solution:
         # approach: greedy
         # each day we can only buy OR sell stocks
         # we can only hold 1 stock at the same time
-        # only collect profit (positive diff between adjecent prices)
+        # only collect profit (positive diff between adjacent prices)
 
         profit = 0
 
@@ -14,4 +14,6 @@ class Solution:
                 profit += diff
 
         return profit
-            
+
+# TC:O(n)
+# SC:O(1)

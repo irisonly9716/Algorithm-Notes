@@ -28,3 +28,6 @@ class Solution:
 
 
         return dfs(root, root.val)
+
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

@@ -59,3 +59,6 @@ class Solution:
             return left * right
         else:
             return int(left / right)
+
+# buildRPNTree: TC:O(n), SC:O(n) the stack and the tree nodes
+# evaluate: TC:O(n), SC:O(h) the recursion stack, O(n) when the tree is skewed

@@ -13,10 +13,12 @@ class Solution:
 
         # t.find(s) returns the first index s appears in t, if it returns -1, s doesn't appear.
         return t.find(s) >= 0
+        # TC:O(n) building t and searching s in it are both linear
+        # SC:O(n) the new string t
         
 
         '''
-        # approach2: KMP algorithm
+        # approach2: KMP algorithm. TC:O(n), SC:O(n) for the prefix table
         # KMP法 先组成前缀表
         # 如果n - prefix[-1]能够被n整除 那么s就是由重复子串组成的
 

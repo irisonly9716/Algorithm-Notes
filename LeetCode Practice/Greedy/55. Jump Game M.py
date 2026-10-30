@@ -13,4 +13,6 @@ class Solution:
             step = max(i + nums[i], step)
             
         return True
-            
+
+# TC:O(n)
+# SC:O(1)

@@ -15,6 +15,6 @@ class Solution:
 
         return True
 
-# TC:O(n + m)
-# SC:O(n)
+# TC:O(n + m) n is the length of ransomNote, m is the length of magazine
+# SC:O(26) -> O(1), the counter holds at most 26 different lowercase letters
 

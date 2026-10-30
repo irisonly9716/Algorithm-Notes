@@ -26,6 +26,6 @@ class Solution:
 
         return True
 
-# TC: O(the number of results * average length of the results) -> o(log n)
+# TC: O(the number of results * average length of the results) -> O(log n)
 # SC: O(the number of results + length of the biggest n) —> O(log n)  
-# why + in SC? the string will be discarded everytime we run the loop
+# why + in SC? the string will be discarded every time we run the loop

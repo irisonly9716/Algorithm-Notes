@@ -25,4 +25,5 @@ class Solution:
 
         return build(0, len(nums) - 1)
 
-        
+# TC:O(n)
+# SC:O(log n) the recursion depth of a balanced tree, not counting the new tree

@@ -27,3 +27,6 @@ class Solution:
                 res.append(nums[queue[0]]) # the head of the queue is the index of the max num
 
         return res
+
+# TC:O(n) every index is pushed and popped at most once
+# SC:O(k) the queue holds at most k indexes, not counting the output

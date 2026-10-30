@@ -42,3 +42,8 @@ class MyQueue:
 # param_2 = obj.pop()
 # param_3 = obj.peek()
 # param_4 = obj.empty()
+
+# push: TC:O(1)
+# pop/peek: amortized TC:O(1). A single call is O(n) when it moves everything from in_stack to out_stack, but every element is moved at most once
+# empty: TC:O(1)
+# SC:O(n) the two stacks hold all the elements

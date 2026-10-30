@@ -9,7 +9,7 @@ class ListNode:
 class Solution:
     def removeNthFromEnd(self, head: Optional[ListNode], n: int) -> Optional[ListNode]:
 
-        # approach:two pointers syncronously iterate the linked list. the distance of these two pointers should be n
+        # approach:two pointers synchronously iterate the linked list. the distance of these two pointers should be n
         # and when the pointer "back" reaches the end, the pointer "front" is pointing to the previous node of the node should be removed.
 
         # edge case

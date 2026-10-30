@@ -22,5 +22,5 @@ class Solution:
 
         return count
 
-# O(n log n)
-# O(1)
+# TC:O(n log n + m log m) sorting g and s, n = len(g), m = len(s)
+# SC:O(1) not counting the space used by the sort

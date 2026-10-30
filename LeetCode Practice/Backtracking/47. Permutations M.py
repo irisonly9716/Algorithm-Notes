@@ -3,7 +3,7 @@ class Solution:
     def permuteUnique(self, nums: List[int]) -> List[List[int]]:
 
 
-        # approach: backtracking + sort for removing duplicate elements in same position to aviod same permutations 
+        # approach: backtracking + sort for removing duplicate elements in same position to avoid same permutations 
         # + set for removing duplicate indexes in same branch
 
         if not nums:

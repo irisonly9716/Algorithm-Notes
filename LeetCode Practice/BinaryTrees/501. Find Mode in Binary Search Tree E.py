@@ -8,7 +8,7 @@ class Solution:
     def findMode(self, root: TreeNode | None) -> list[int]:
         
         # approach:iteration
-        # dynamically record the mode (value and frequence) in in-order traversal
+        # dynamically record the mode (value and frequency) in in-order traversal
 
         if not root:
             return []
@@ -45,3 +45,5 @@ class Solution:
 
         return res
 
+# TC:O(n)
+# SC:O(h) the stack, not counting the result list

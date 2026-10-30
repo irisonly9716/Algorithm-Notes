@@ -34,4 +34,5 @@ class Solution:
 
         return False if diff == -1 else True
 
-
+# TC:O(n) every node is visited once
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

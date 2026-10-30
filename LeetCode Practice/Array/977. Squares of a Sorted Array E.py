@@ -31,6 +31,6 @@ s = Solution()
 nums = [-4,-1,0,3,10]
 print(s.sortedSquares(nums))
 
-# TC:n
-# SC:n (the output array. If it does not count, the space complexity would be constant.)
+# TC:O(n)
+# SC:O(n) (the output array. If it does not count, the space complexity would be constant.)
         

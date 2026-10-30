@@ -19,8 +19,10 @@ class Solution:
         if root.val > high:
             return self.trimBST(root.left, low, high)
 
-        # if root.val in [low, high], try to modify it's children.
+        # if root.val in [low, high], try to modify its children.
         root.left = self.trimBST(root.left, low, high)
         root.right = self.trimBST(root.right, low, high)
         return root
 
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

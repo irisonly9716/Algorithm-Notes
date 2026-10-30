@@ -33,4 +33,5 @@ class Solution:
 
         return min_abs
 
-            
+# TC:O(n)
+# SC:O(h) the stack

@@ -30,7 +30,8 @@ class Solution:
 
             
 # C(9, k) 同时 和为n
-# O(1) deepest = 9
+# TC:O(C(9, k) * k) at most C(9, k) <= 2**9 combinations, each copied in O(k), so it is bounded (O(1)) as well
+# SC:O(k) the recursion depth and path, at most 9
 
 
 

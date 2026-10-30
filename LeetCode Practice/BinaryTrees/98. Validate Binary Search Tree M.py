@@ -34,6 +34,8 @@ class Solution:
             return inorder(node.right)
             
         return inorder(root)
+        # TC:O(n)
+        # SC:O(h) the recursion stack, O(n) when the tree is skewed
 
 
 

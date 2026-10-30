@@ -36,8 +36,8 @@ class Solution:
 
         return stack[0] if stack else None
 
-        # O(n)
-        # O(n)
+        # TC:O(n) every node is pushed and popped at most once
+        # SC:O(n) the stack
         
 
 

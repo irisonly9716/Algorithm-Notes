@@ -27,6 +27,8 @@ class Solution:
         inorder(root)
 
         return res 
+        # TC:O(n)
+        # SC:O(h) the recursion stack, O(n) when the tree is skewed
 
 
 '''

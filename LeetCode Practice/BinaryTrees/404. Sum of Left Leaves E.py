@@ -30,3 +30,6 @@ class Solution:
                 stack.append(node.left)
 
         return value
+
+# TC:O(n)
+# SC:O(h) the stack holds one path and the right siblings waiting on it

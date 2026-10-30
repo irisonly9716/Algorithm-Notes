@@ -1,7 +1,7 @@
 class Solution(object):
     def subsets(self, nums):
 
-        # approach: recursion, collect all possible conbinations on each leave in a search tree.
+        # approach: recursion, collect all possible combinations on each leaf in a search tree.
         res = []
         path = []
         n = len(nums)

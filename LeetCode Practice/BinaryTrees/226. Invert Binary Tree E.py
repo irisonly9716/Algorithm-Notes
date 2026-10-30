@@ -18,3 +18,6 @@ class Solution:
         self.invertTree(root.right)
 
         return root
+
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

@@ -2,7 +2,7 @@ from typing import List
 class Solution:
     def findSubsequences(self, nums: List[int]) -> List[List[int]]:
         
-        # approach: backrtracking + set for removing duplicates in the same layer(same position)
+        # approach: backtracking + set for removing duplicates in the same layer(same position)
         # we cannot sort the nums because subsequence should in original order        
         # subsequence是不可以改变顺序的
         # 长度大于等于2即可加入res数组

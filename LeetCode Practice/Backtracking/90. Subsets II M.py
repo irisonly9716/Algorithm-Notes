@@ -36,3 +36,6 @@ class Solution:
         backtracking([], 0)
 
         return res
+
+# TC:O(n * 2**n) up to 2**n subsets, each copied in O(n); sorting is only O(n log n)
+# SC:O(n) the recursion depth and path, not counting the output

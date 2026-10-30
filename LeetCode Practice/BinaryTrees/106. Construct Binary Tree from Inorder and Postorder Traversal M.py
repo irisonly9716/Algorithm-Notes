@@ -31,4 +31,6 @@ class Solution:
             return new
 
         return build(0, len(postorder) - 1)
-            
+
+# TC:O(n) every node is built once, the index lookup is O(1) with the dict
+# SC:O(n) the dict of inorder indexes; the recursion stack is O(h)

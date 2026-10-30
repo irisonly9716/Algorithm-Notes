@@ -22,3 +22,6 @@ class Solution:
             nums[-1] = - nums[-1]
 
         return sum(nums)
+
+# TC:O(n log n) sorting
+# SC:O(n) sort() with a key function builds a temporary list of keys, the rest is O(1)

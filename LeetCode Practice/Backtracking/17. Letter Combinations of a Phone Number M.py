@@ -49,3 +49,6 @@ class Solution:
             
 # 递归栈深度：n
 # 时间 4的n次方 （每个数字的字母列表最长是4）n次4选1
+
+# TC:O(4**n * n) n is the length of digits: up to 4**n strings, each built with ''.join in O(n)
+# SC:O(n) the recursion depth and path, not counting the output

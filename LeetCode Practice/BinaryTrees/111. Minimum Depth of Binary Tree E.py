@@ -21,3 +21,6 @@ class Solution:
             return left + 1
 
         return min(left + 1, right + 1)
+
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

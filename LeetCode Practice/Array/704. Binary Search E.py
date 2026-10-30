@@ -4,7 +4,7 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         
         # approach:plain binary search
-        # mind the boarders of array
+        # mind the borders of array
         
         n = len(nums)
 
@@ -32,5 +32,5 @@ nums = [-1,0,3,5,9,12]
 target = 9
 print(s.search(nums, target))
  
-# TC:log n
-# SC:constant
+# TC:O(log n)
+# SC:O(1)

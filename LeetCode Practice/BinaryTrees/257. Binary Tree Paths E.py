@@ -37,3 +37,6 @@ class Solution:
         findpath(root)
 
         return res
+
+# TC:O(n**2) in the worst case: up to n/2 leaves, and every leaf joins a path of up to h nodes (O(n log n) for a balanced tree)
+# SC:O(h) the path and the recursion stack, not counting the result

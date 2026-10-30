@@ -3,10 +3,12 @@ class Solution:
 
         # approach: split the words and reverse them
         return " ".join(reversed(s.split()))
+        # TC:O(n)
+        # SC:O(n) the list of words and the new string
 
         '''
         # 为每个word跳过whitespace 然后反转
-        # O(n) O(n)
+        # TC:O(n) SC:O(n)
 
         i = 0
         words = []

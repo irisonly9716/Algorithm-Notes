@@ -40,3 +40,5 @@ class Solution:
 # root 是公共祖先：p 和 q 是树中两个不同的节点，各自只出现一次。左边至少有一个，右边至少有一个，那只能是一个在左、一个在右。root 同时是左右子树所有节点的祖先，所以它是 p 和 q 的公共祖先。
 # root 是最低的：比 root 更低的任何节点，要么整个在左子树里，要么整个在右子树里，不可能同时包含左边的那个和右边的那个。所以没有比 root 更低的公共祖先。
 
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed

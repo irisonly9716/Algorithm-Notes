@@ -17,7 +17,7 @@ class Solution:
 
         while queue:
             
-            # we need to know the length of the queue 'cause nodes will be continuely added to the queue
+            # we need to know the length of the queue 'cause nodes will be continuously added to the queue
             layer = []
 
             for _ in range(len(queue)):
@@ -34,5 +34,5 @@ class Solution:
 
         return res
 
-# o(n)
-# O(n)
+# TC:O(n)
+# SC:O(n) the queue holds up to one whole layer

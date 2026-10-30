@@ -8,7 +8,7 @@ class Solution:
         # 2. when sum >= target, compare the length of window to the min_win
         # 3. return min_win
 
-        # maintain the variable of minumum window, keeping it the min length. If window not found, return 0.
+        # maintain the variable of minimum window, keeping it the min length. If window not found, return 0.
         min_win = float('inf')
 
         n = len(nums)
@@ -25,7 +25,7 @@ class Solution:
             # while we found a valid window, record and try to move the left pointer to shrink the window from left
             while curr_sum >= target:
 
-                # mind the way to compute length in an array. the left boarder should be included.
+                # mind the way to compute length in an array. the left border should be included.
                 length = right - left + 1  
                 min_win = min(length, min_win)
             
@@ -42,4 +42,4 @@ nums = [2,3,1,2,4,3]
 print(s.minSubArrayLen(target, nums))
 
 # TC:O(n)
-# SC:constant
+# SC:O(1)

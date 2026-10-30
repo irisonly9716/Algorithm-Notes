@@ -24,13 +24,16 @@ class Solution:
 
         return start
 
+# TC:O(n)
+# SC:O(1)
+
 # 推导1：从 s 出发在 i 卡住，那么 s 到 i 之间的任何站出发也一定在 i 卡住, 这条结论保证了 start = i + 1 可以直接跳过一大段，不用一个个重试。
 # 推导2：如果总油量大于总消耗量，那么一定存在一个起点可以绕一圈。
         
 
         
         '''
-        # brute force n^2
+        # brute force n^2: TC:O(n**2), SC:O(1)
 
         if sum(cost) > sum(gas):
             return -1

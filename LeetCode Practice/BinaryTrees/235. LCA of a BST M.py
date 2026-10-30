@@ -28,4 +28,5 @@ class Solution:
 
         return None
 
-# O(h), O(1)
+# TC:O(h) h is the height of the tree
+# SC:O(1)

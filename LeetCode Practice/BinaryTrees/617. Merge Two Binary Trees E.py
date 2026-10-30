@@ -24,3 +24,6 @@ class Solution:
         root1.right = self.mergeTrees(root1.right, root2.right)
         
         return root1
+
+# TC:O(min(n, m)) n and m are the sizes of the two trees, we stop when one side is empty
+# SC:O(min(h1, h2)) the recursion stack, h1 and h2 are the heights of the two trees

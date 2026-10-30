@@ -25,8 +25,8 @@ class Solution:
         return count
 
 
-# O(n)
-# O(1)
+# TC:O(n)
+# SC:O(1)
 
 
 

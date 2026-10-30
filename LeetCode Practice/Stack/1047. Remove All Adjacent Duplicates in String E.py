@@ -16,6 +16,5 @@ class Solution:
 
         return ''.join(stack)
 
-
-
-        
+# TC:O(n)
+# SC:O(n) the stack

@@ -40,3 +40,7 @@ class MyStack:
 
         return not self.q
 
+# push: TC:O(1)
+# pop/top: TC:O(n) the queue is rotated len - 1 times
+# empty: TC:O(1)
+# SC:O(n) the queue holds all the elements

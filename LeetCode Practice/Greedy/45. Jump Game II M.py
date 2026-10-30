@@ -10,17 +10,19 @@ class Solution:
             return 0
 
         jump = 0
-        further = 0 # next farest index we can reach
-        end = 0 # current farest index we can reach
+        further = 0 # next farthest index we can reach
+        end = 0 # current farthest index we can reach
 
         for index in range(len(nums) - 1): # the last index doesn't need any jump
 
-            further = max(index + nums[index], further) # update the next farest index we can reach
+            further = max(index + nums[index], further) # update the next farthest index we can reach
 
             if index == end:
                 jump += 1
-                end = further # update the current farest index we can reach
+                end = further # update the current farthest index we can reach
             
 
         return jump
 
+# TC:O(n)
+# SC:O(1)

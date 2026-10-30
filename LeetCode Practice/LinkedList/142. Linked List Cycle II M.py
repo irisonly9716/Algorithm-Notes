@@ -12,7 +12,7 @@ class Solution:
         # approach: Floyd two pointers. 
         # 1. "fast" goes 2 steps and "slow" goes 1 step at once. 
         # 2. when slow meets fast, we find the cycle. 
-        # 3. send one pointer to the head, two pointers go syncronously, when they meet again, we find the entrance of the cycle.
+        # 3. send one pointer to the head, two pointers go synchronously, when they meet again, we find the entrance of the cycle.
 
         slow = fast = head
 

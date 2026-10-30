@@ -19,3 +19,6 @@ class Solution:
             root.left = self.insertIntoBST(root.left, val)
 
         return root
+
+# TC:O(h) h is the height of the tree
+# SC:O(h) the recursion stack

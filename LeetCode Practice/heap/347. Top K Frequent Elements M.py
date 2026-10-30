@@ -22,6 +22,8 @@ class Solution:
         res = [num for freq, num in min_heap]
 
         return res
+        # TC:O(n + u log k) u is the number of different numbers (u <= n), so it is O(n log k)
+        # SC:O(u) -> worst O(n): the counter, and a heap that never holds more than k + 1 items
 
 
 

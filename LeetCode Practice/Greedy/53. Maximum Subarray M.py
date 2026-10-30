@@ -2,7 +2,7 @@ from typing import List
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
 
-        # approach: greey - Kadane Algorithm
+        # approach: greedy - Kadane Algorithm
         # when we find a num that will make the target <= 0, restart the curr subarray
         # because a negative/0 number will never make a sum bigger
 
@@ -21,3 +21,6 @@ class Solution:
             # never record best in here, it may become 0 even though 0 is not in array.
 
         return best
+
+# TC:O(n)
+# SC:O(1)

@@ -4,12 +4,12 @@ class Solution:
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
         
         # approach: directed graph + backtracking
-        # record the final destination(no adjecent nodes anymore) first and then start
+        # record the final destination(no adjacent nodes anymore) first and then start
         # Eulerian path: a path that visits every edge exactly once.
         # The problem is guaranteed to have at least one valid itinerary. So we can use DFS to find the Eulerian path.
 
         graph = defaultdict(list) # {start:[destinations]}
-        res = [] # reversly record destinations
+        res = [] # record destinations in reverse order
         for start, des in tickets:
             graph[start].append(des)
 
@@ -32,5 +32,5 @@ class Solution:
         return res[::-1]
 
 
-# O(E log E) + O(V + E)
-# O(V + E)
+# TC:O(E log E) sorting the destinations; the traversal itself is O(V + E)
+# SC:O(V + E) the graph and the recursion stack

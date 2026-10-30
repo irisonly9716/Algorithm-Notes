@@ -32,3 +32,6 @@ class Solution:
         preorder(root, 0)
 
         return self.leftmost
+
+# TC:O(n)
+# SC:O(h) h is the height of the tree (the recursion stack), O(n) when the tree is skewed
